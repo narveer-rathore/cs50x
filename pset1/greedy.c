@@ -7,17 +7,15 @@ int main(void) {
     
     printf("O hai! "); 
     
-    
     do {
         printf("How much change is owed?\n");
         change = GetFloat();
     } while (change < 0);
     
-    //printf("%f\n", change*100.0);
+
     change = change * 100;
     int cents = round(change);
     int coins = 0;
-   //printf("cents = %d\n", cents);
     
     while (cents >= 25) {
         coins += 1;
