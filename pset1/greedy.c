@@ -12,9 +12,7 @@ int main(void) {
         change = GetFloat();
     } while (change < 0);
     
-
-    change = change * 100;
-    int cents = round(change);
+    int cents = round(change * 100);
     int coins = 0;
     
     while (cents >= 25) {
