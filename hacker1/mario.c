@@ -17,7 +17,7 @@ int main(void) {
             printf(" ");
             
         for (int j = 0; j < (h - space); j++)
-            printf("#");    
+            printf("#");
         
         printf("  ");
         

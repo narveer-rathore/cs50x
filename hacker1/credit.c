@@ -12,17 +12,16 @@ int main(void) {
     short int d, isOther = 0;
     
     len = sum = psum = 0;
+    
     while (num > 0) {
         if (isOther) {
             d = num % 10;
-            
             d = d * 2;
             
             if (d > 9)
                 d = 1 + d % 10;   
             
             psum += d;
-            
             isOther = 0;
         } else {
             sum += num % 10;
@@ -30,7 +29,6 @@ int main(void) {
         }
         
         len++;
-        
         num = num / 10;
         
         if (num <= 99 && num >= 10)
@@ -38,8 +36,6 @@ int main(void) {
     }
 
     first = firstTwo / 10;
-    
-    //printf("first- %d, two = %d\n", first, firstTwo);
 
     if (len == 15 && (firstTwo == 34 || firstTwo == 37)) { 
         printf("AMEX\n");
